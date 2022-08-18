@@ -1,0 +1,39 @@
+// sum of factorial values of all elements in array
+#include <stdio.h>
+
+int main() {
+    int n;
+    int arr[20];
+    int i,j,f=1,sum=0;
+    printf( "enter n value\n");
+    
+    scanf( "%d",&n);
+    printf( "enter elements into array\n");
+    for(i=0;i<n;i++)
+    {
+        scanf( "%d",&arr[i]);
+    }
+    for(i=0;i<n;i++)
+   {
+       f=f*arr[i];
+       sum=sum+f;
+       printf("factorial value of arr[%d]=%d\n",i,f);
+   }
+   printf( "sum of factorial values of all elememts=%d",sum);
+  
+}
+ouput:
+enter n value
+5
+enter elements into array
+1
+2
+3
+4
+5
+factorial value of arr[0]=1
+factorial value of arr[1]=2
+factorial value of arr[2]=6
+factorial value of arr[3]=24
+factorial value of arr[4]=120
+sum of factorial values of all elememts=153
